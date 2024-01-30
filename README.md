@@ -1,5 +1,11 @@
 # SBC Demo for KRaft powered Kafka Clusters
 
+## Start
+
+```
+./up.sh
+```
+
 ## SBC
 
 ### Enable SBC
@@ -13,4 +19,10 @@ kafka-configs --bootstrap-server localhost:9092,localhost:19092 --entity-type br
 
 ```
 kafka-rebalance-cluster --bootstrap-server localhost:9092,localhost:19092 --command-config client.properties --status
+```
+
+## Teardown
+
+```
+./teardown.sh
 ```
